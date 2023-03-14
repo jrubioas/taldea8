@@ -1,45 +1,26 @@
 function A(){
-    var usern = document.getElementById("user").value
-    var passn = document.getElementById("pass").value
-    if (usern == passn){
-        location.assign("https://www.w3schools.com");
-    }else{
-        document.getElementById("a").innerHTML = "TONTO";
-    }
+  var usern = document.getElementById("user").value
+  var passcn = document.getElementById("txtpassword").value
+  if (passcn == usern){
+      location.assign("file:///C:/Users/AimarEsparzaG%C3%B3mez/Desktop/AQUI/PROIEKTUA_Eloy/home.html");
+  }else{
+      document.getElementById("a").innerHTML = "Las contraseñas no coinciden  ";
+  }
 }
-
-function mostrarPassword(){
-  var cambio = document.getElementById("pasahitza");
-  if(cambio.type == "password"){
-    cambio.type = "text";
+function pasahitza(){
+  var passcn = document.getElementById("txtpassword");
+  if(passcn.type == "password"){
+    passcn.type = "text";
     $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
   }else{
-    cambio.type = "password";
+    passcn.type = "password";
     $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
-  }
+  }  
 } 
-
-$(document).ready(function () {
-//CheckBox mostrar contraseña
-$('#ShowPassword').click(function () {
-  $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
-});
-});
-
-function mostrarPassword(){
-  var cambio = document.getElementById("pasahitza_confirm");
-  if(cambio.type == "password"){
-    cambio.type = "text";
-    $('.icon').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
-  }else{
-    cambio.type = "password";
-    $('.icon').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
-  }
-} 
-
-$(document).ready(function () {
-//CheckBox mostrar contraseña
-$('#ShowPassword').click(function () {
-  $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
-});
-});
+  
+  $(document).ready(function () {
+  //CheckBox mostrar contraseña
+  $('#showpassword').click(function () {
+    $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
+  });
+  });
