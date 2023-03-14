@@ -1,3 +1,0 @@
-Lander
-Aimar
-Eloy
