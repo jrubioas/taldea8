@@ -234,8 +234,9 @@ section img:hover {
 .lab{
     padding-left: 30px;
     margin-bottom: 20px;
+
 }
-#eperfila{
+#output{
     height: 180px;
     width: 180px;
     border-radius: 50%;
@@ -257,12 +258,12 @@ section img:hover {
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 12px 22px 12px ;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.5s ease-in-out;
     margin-left: 20px;
   }
   
 .inp[type=text]:focus {
-    width: 100%;
+    width: 90%;
   }
 .imgdm{
     height: 100px;
