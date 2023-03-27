@@ -13,7 +13,7 @@ function openNav() {
 function U(){
   location.assign("file:///C:/Users/EloyGarc%C3%ADaMor%C3%A1n/Desktop/js/PROIEKTUA_Eloy/perfil_.html")
 }
-async function ekarriOrdua() {
+async function user() {
   var data = await (await fetch('http://zubiriapi.duckdns.org:8000/select/select * from users/taldea8')).json()
   document.getElementById("ordua").innerHTML= data.item_id;
 }
