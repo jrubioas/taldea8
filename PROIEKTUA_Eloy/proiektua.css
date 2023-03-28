@@ -111,7 +111,6 @@ th {
     padding-left: 280px;
 }
 
-
 .sidebar {
     height: 100%;
     width: 0;
@@ -133,7 +132,6 @@ th {
     display: block;
     transition: 0.3s;
 }
-
 
 .sidebar .closebtn {
     position: absolute;
