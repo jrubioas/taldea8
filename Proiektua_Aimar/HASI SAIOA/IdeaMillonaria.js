@@ -1,12 +1,3 @@
-function A(){
-  var usern = document.getElementById("user").value
-  var passcn = document.getElementById("txtpassword").value
-  if (passcn == usern){
-      location.assign("file:///C:/Users/AimarEsparzaG%C3%B3mez/Desktop/AQUI/PROIEKTUA_Eloy/home.html");
-  }else{
-      document.getElementById("a").innerHTML = "Las contraseñas no coinciden  ";
-  }
-}
 function pasahitza(){
   var passcn = document.getElementById("txtpassword");
   if(passcn.type == "password"){
@@ -24,3 +15,38 @@ function pasahitza(){
     $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
   });
   });
+
+
+
+
+async function HASI(){
+  var esta = 0
+  var usern = document.getElementById("user").value
+  var user_gmail = await (await fetch("http://zubiriapi.duckdns.org:8000/select/select user_gmail from users/taldea8")).json();
+  for(n = 0; n <= user_gmail.length; n++){
+    var hostia = user_gmail[n].user_gmail;
+    if (hostia == usern){
+      var n = 99999
+      var esta = esta + 1
+    }else{
+      if(n+1 == user_gmail.length){
+        document.getElementById("a").innerHTML = "joder";
+      }
+    } 
+  }
+  var username = await (await fetch("http://zubiriapi.duckdns.org:8000/select/select%20username%20from%20users/taldea8")).json();
+  for(n = 0; n <= username.length; n++){
+    var hostia = username[n].username;
+    if (hostia == usern){
+      var n = 99999
+      var esta = esta + 1
+    }else{
+      if(n+1 == username.length){
+        var esta = esta +2
+      }
+    } 
+  }
+  document.getElementById("A").innerHTML = esta;
+  
+  var passcn = document.getElementById("txtpassword").value
+}
