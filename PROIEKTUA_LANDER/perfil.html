@@ -9,7 +9,7 @@
 
 <body>
   <div id="mySidebar" class="sidebar">
-    <a href=""><img src="img/lews.jpg" class="logo1"></a>
+    <a href="about.html"><img src="img/lews.jpg" class="logo1"></a>
     <a href="home.html"><img src="img/home.png" class="imagenes_menu"></a>
     <a href="perfil.html"><img src="img/fotoperfil.jpg" class="imagenes_menu"></a>
     <a href="dm.html"><img src="img/dm4.png" class="imagenes_menu"></a>
@@ -27,14 +27,43 @@
         <th id="Jarraitzileak">Jarraitzileak: <br><br> 344</th>
         <th id="Jarraituak">Jarraituak: <br><br> 301</th>
       </tr>
+      <tr>
+        <td id="newuser" colspan="4">New user</td>
+    </tr>
+    <br><br><br>
+    <tr>
+        <th colspan="4"> <button class="button_p" onclick="U()"><b>Editatu perfila </b></button></th>
+    </tr>
+
+    <br><br><br>
+    <tr>
+        <th colspan="4"><img src="img/no img.jpg" class="story" alt=""><img src="img/no img.jpg" class="story"
+                alt=""><img src="img/no img.jpg" class="story" alt=""><img src="img/no img.jpg" class="story"
+                alt=""></th>
+    </tr>
 
     </table>
     <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
-
-    <section>
-      <img id="output">
-    </section>
+<p><label for="file" style="cursor: pointer;"><img src="img/add_image.png" id="addimage"></label></p>
+<table>
+  <tr>
+    <td class="sections">
+      <section>
+        <img id="output1">
+        <img id="output2">
+        <img id="output3">
+      </section>
+    </td>
+    <td class="sections">
+      <section>
+        <img id="output4">
+        <img id="output5">
+        <img id="output6">
+      </section>
+    </td>
+  </tr>
+</table>
+    
   </div>
   <script src="ideamillonaria.js"></script>
 </body>

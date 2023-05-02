@@ -111,7 +111,6 @@ th {
     padding-left: 280px;
 }
 
-
 .sidebar {
     height: 100%;
     width: 0;
@@ -133,7 +132,6 @@ th {
     display: block;
     transition: 0.3s;
 }
-
 
 .sidebar .closebtn {
     position: absolute;
@@ -219,34 +217,38 @@ section img:hover {
     border: 2px solid black;
     border-radius: 4px;
 }
-#under{
+
+#under {
     text-decoration-line: underline;
     text-align: center;
 
 }
-.t2{
+
+.t2 {
     padding-bottom: 30px;
-    padding-left: 300px;
-    padding-right: 300px;
     padding-top: 30px;
-    
+    padding-right: 500px;
 }
-.lab{
+
+.lab {
     padding-left: 30px;
     margin-bottom: 20px;
 
 }
-#output{
+
+#output {
     height: 180px;
     width: 180px;
     border-radius: 50%;
     margin-left: 33%;
     margin-bottom: 30px;
 }
-#ebutton{
+
+#ebutton {
     margin-left: 39%;
     margin-bottom: 20px;
 }
+
 .inp[type=text] {
     width: 100px;
     box-sizing: border-box;
@@ -255,30 +257,115 @@ section img:hover {
     font-size: 15px;
     background-color: white;
     background-image: url('searchicon.png');
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 12px 22px 12px ;
+    padding: 12px 22px 12px;
     transition: width 0.5s ease-in-out;
     margin-left: 20px;
-  }
-  
+}
+
 .inp[type=text]:focus {
     width: 90%;
-  }
-.imgdm{
+}
+
+.imgdm {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     margin-left: 30px;
     margin-bottom: 20px;
 }
-.t3{
+
+.t3 {
     border: 2px solid black;
     padding-top: 20px;
 }
-.t4{
+
+.t4 {
     border: 2xp solid black;
 }
-#abtable{
+
+#abtable {
     border: 2px solid black;
+}
+
+
+
+.ref {
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+.fd:visited {
+    text-decoration-color: white;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+#gh{
+    padding-bottom: 20px;
+    padding-top: 40px;
+    text-decoration: underline;
+
+}
+.e{
+    margin-left: 100px;
+    padding-right: 100px;
+    
+}
+#table{
+    text-align: center;
+}
+#li{
+    margin-left: 150px;
+}
+#link{
+    margin-left: 150px;
+    
 }
