@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="IdeaMillonaria1.css">
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <table id="table1">
+        <tr>
+            <td>
+                ERREGISTRATU<br><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td id="pad">
+                <p>Zure izena:</p>
+                <input type="text" id="name" name="user"><br><br><br><br>
+                <p>Zure abizena:</p>
+                <input type="text" id="surname" name="usuario"><br><br><br><br>
+                <p>Usuarioaren izena:</p>
+                <p class="small">(besteek horrela ikusiko zaituzte)</p>
+                <input type="text" id="user" name="usuario">
+                <p id="u" class="small">u</p><br><br><br><br>
+                <p>Correoa:</p>
+                <input type="text" id="correo" name="usuario">
+                <p id="c" class="small">c</p><br><br><br><br>
+                <p>Pasahitza:</p>
+
+
+                <form id="form1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="input-group">
+                                <input id="txtpassword" type="Password" Class="form-control">
+                                <div class="input-group-append">
+                                    <button id="show_password" class="btn btn-primary" type="button"
+                                        onclick="pasahitza()"> <span class="fa fa-eye-slash icon"></span> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form><br>
+                <p id="p" class="small"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="ERREGISTRATU()" class="button">ERREGISTRATU</button>
+                <button onclick="POST()" class="button">POST</button>
+                <p id="q" class="small">z</p>
+                <p class="small"><a href="file:///C:/Users/AimarEsparzaG%C3%B3mez/Desktop/AQUI/Proiektua_Aimar/ERREGISTRATU/IdeaMillonaria.html">Kontua duzu?</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+<script src="IdeaMillonaria1.js"></script>
+</html>
+
