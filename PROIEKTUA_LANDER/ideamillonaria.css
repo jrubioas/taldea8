@@ -79,7 +79,7 @@ h1 {
   .divheaderlogo2{
     font-weight: bolder;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: black;
     display: inline;
   
   }
@@ -167,16 +167,17 @@ h1 {
   }
   section img:hover{
     cursor: pointer;
-    width: 300px;
+    width: 1000px;
     opacity: 1;
     filter: contrast(120%);
   }
 
   .sections{
     padding: 50px;
+    margin-left: 70px;
   }
 
-  #addimage{
+  #add_image{
     width: 60px;
     height: 60px;
     margin-top: 40px;
@@ -187,15 +188,15 @@ h1 {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.button_p {
-  border-radius: 3px;
-  border-color: rgb(0, 0, 0);
+#button_p {
   background-color: rgb(0, 0, 0);
   color: white;
-  pointer-events: visible;
   cursor: pointer;
   height: 30px;
   width: 1000px;
+  text-align: center;
+  margin-left: 115px;
+  padding-top: 5px;
 }
 .story {
   border-radius: 50%;
@@ -203,8 +204,16 @@ h1 {
   border: 3px solid rgb(103, 100, 100);
   height: 90px;
   width: 90px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 60px;
+  margin-right: 60px; 
+}
+
+#story1{
+  margin-top: 10px;
+  height: 90px;
+  width: 90px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 #under{
@@ -224,7 +233,7 @@ h1 {
   height: 180px;
   width: 180px;
   border-radius: 50%;
-  margin-left: 33%;
+  margin-left: 275px;
   margin-bottom: 30px;
 }
 
@@ -268,5 +277,175 @@ h1 {
   margin: auto 0px;
   width: 50px;
   height: 50px;
-  margin-left: 320px;
+  margin-left: 230px;
+}
+
+#flecha{
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+a:visited{
+  color: white;
+}
+
+#sections1{
+  padding-left: 110px;
+}
+
+#fotoperfil{
+  height: 300px;
+  width: 300px;
+  margin-left: 100px;
+  background-size: cover;
+  border-radius: 80%;
+}
+
+#fotoperfilradius{
+  padding-left: 115px ;
+}
+
+.newstory{
+  text-align: right;
+}
+
+#ftstory{
+  width: 40px;
+  height: 40px;
+}
+
+.about_testua{
+  margin-left: 200px;
+  margin-right: 200px;
+
+}
+
+#izenburua{
+  font-size: 50px;
+}
+
+.dark-mode{
+  background-color: black;
+  color: white;
+}
+
+#table2_.dark-mode{
+  border-color: white;
+}
+
+#fotoperfilradius{
+  border-radius: white;
+}
+
+/*Like button*/
+
+.like-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.like-btn:active{
+  transform: scale(0.9, 0.9);
+}
+.like-btn.active{
+  animation: pop 0.6s 1;
+}
+.like-btn path {
+  fill: #767676;
+}
+.like-btn.active path{
+  fill: #ec3e3e;
+}
+
+.clone{
+  position: absolute;
+  animation: moveOutwards 0.9s 1;
+  opacity: 0;
+}
+
+@keyframes moveOutwards{
+  from {
+    opacity: 1;
+    transform: translate(0 , 0);
+  }
+}
+
+#homepage{
+  border-radius: 20px;
+  width: 300px;
+  height: 40px;
+  margin-left: 455px;
+}
+
+/*Boton para link*/
+
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+  margin-left: 540px;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }

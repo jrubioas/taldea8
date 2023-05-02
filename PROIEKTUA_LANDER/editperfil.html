@@ -3,19 +3,25 @@
     <link rel="stylesheet" href="ideamillonaria.css">
 </head>
 
-<body>
+<body onload="loadPage()">
 
-
+    <a href="perfil.html"><img src="img/light/flecha.png" id="flecha"></a>
+    
     <table id="table2_">
         <tr>
             <td class="t2">
-                <p><u id="under">PERFILA EDITATU</u> </p>
+                <p><u id="under">PERFILA EDITATU</u></p>
             </td>
         </tr>
         <tr>
-            <td>
-                <p><img src="img/no img.jpg" id="eperfila" alt=""></p> <br>
-                <p><label for="file" style="cursor: pointer;"><img src="img/add_image.png" id="addimage2"></label></p>
+            <td id="sections1">
+                <p><input type="file"  accept="image/*" name="image" id="file"  onchange="profilArgazkia(event)" style="display: none;"></p>
+                <p><label for="file" style="cursor: pointer;"><img src="img/light/add_image.png" id="addimage2"></label></p><br>
+            </td>
+        </tr>
+        <tr>
+            <td id="fotoperfilradius">
+                <img id="fotoperfil">
             </td>
         </tr>
         <tr>
@@ -32,7 +38,7 @@
         </tr>
         <tr>
             <td>
-                <label class="lab">Aurkezpena::</label><br>
+                <label class="lab">Aurkezpena:</label><br>
                 <input class="inp" type="text" value="">
             </td>
         </tr>
@@ -44,5 +50,6 @@
         </tr>
         
     </table>
+    <br><br>
     <script src="ideamillonaria.js"></script>
 </body>

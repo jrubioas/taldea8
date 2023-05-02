@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="ideamillonaria.css">
-    <link rel="icon" type="image/png" href="img/lews4.jpg" sizes="32x32">
-    <title>LEWS</title>
+  <link rel="stylesheet" href="ideamillonaria.css">
+  <link rel="icon" type="image/png" href="img/lews4.jpg" sizes="32x32">
+  <title>LEWS</title>
 </head>
-<body>
-    <div id="mySidebar" class="sidebar">
-        <a href="about"><img src="img/lews.jpg" class="logo1"></a>
-        <a href="home.html"><img src="img/home.png" class="imagenes_menu"></a>
-        <a href="perfil.html"><img src="img/fotoperfil.jpg" class="imagenes_menu"></a>
-        <a href="dm.html"><img src="img/dm4.png" class="imagenes_menu"></a>
-      </div>
-      
-      <div id="main">
-        <button id="btn_open" class="openbtn" onclick="openNav()">☰</button>
-        <img id="gureargazkia">
-        
-      </div>
-    <script src="ideamillonaria.js"></script>
+
+<body onload="loadPage()">
+  <div id="mySidebar" class="sidebar">
+    <a href="about.html"><img src="img/lews.jpg" class="logo1" id="logo_1"></a>
+    <a href="home.html"><img src="img/home.png" class="imagenes_menu" id="home"></a>
+    <a href="perfil.html"><img src="img/fotoperfil.jpg" class="imagenes_menu" id="foto_perfil"></a>
+    <img src="" onclick="darkLight()" class="imagenes_menu" id="dark_light">
+  </div>
+
+  <div id="main">
+    <p id="username" hidden></p>
+    <p id="headerdiv" hidden></p>
+    <button id="btn_open" class="openbtn" onclick="openNav()">☰</button>
+    <div class="about_testua">
+      <h id="izenburua"><b>Zertan datza LEWS?</b></h>
+      <br><br><br>
+      <p>
+        LEWS Zubiri Manteoko informatikako klaseko hiru ikaslek sortu duten sare soziala da.
+        Web-orri honetan argazkiak eta historiak publikatzea lortu nahi da.
+      </p>
+      <img id="gureargazkia">
+    </div>
+    <img src="http://placehold.it/350x150" id="toggleImage" onclick="toggleImage();"/>
+  </div>
+  <script src="ideamillonaria.js"></script>
 </body>
+
 </html>
